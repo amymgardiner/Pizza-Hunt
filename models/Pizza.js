@@ -16,6 +16,12 @@ const PizzaSchema = new Schema({
     default: 'Large',
   },
   toppings: [],
+  comments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Comment',
+    },
+  ],
 });
 
 // create the Pizza model using the PizzaSchema
