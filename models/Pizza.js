@@ -1,10 +1,5 @@
 const { Schema, model } = require('mongoose');
 
-// get total count of comments and replies on retrieval
-PizzaSchema.virtual('commentCount').get(function () {
-  return this.comments.length;
-});
-
 const PizzaSchema = new Schema(
   {
     pizzaName: {
@@ -36,6 +31,11 @@ const PizzaSchema = new Schema(
     id: false,
   }
 );
+
+// get total count of comments and replies on retrieval
+PizzaSchema.virtual('commentCount').get(function () {
+  return this.comments.length;
+});
 
 // create the Pizza model using the PizzaSchema
 const Pizza = model('Pizza', PizzaSchema);
