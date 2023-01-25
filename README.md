@@ -8,4 +8,6 @@ In this module, I built Pizza Hunt, a social media recipe app where users can po
 
 Instead of using a MySQL database, I used MongoDB, a document-based NoSQL database, and Mongoose, an Object-Document Mapper, to work with unstructured data.
 
-[Heroku Link](https://cryptic-harbor-15816.herokuapp.com/)
+[Render Link](https://pizza-hunt-ovf9.onrender.com/)
+
+**Update: Due to the removal of Heroku's free product plans, I have found another free hosting platform that was not taught in the bootcamp. The [Heroku link](https://cryptic-harbor-15816.herokuapp.com/) for this site no longer works. Please view this site with the new link above. Thanks!**
